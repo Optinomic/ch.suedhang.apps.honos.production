@@ -1,7 +1,7 @@
 
 SELECT
 
--- START:  Optinoimc Default
+  -- START:  Optinoimc Default
   survey_response_view.patient_id as optinomic_patient_id,
   survey_response_view.stay_id as optinomic_stay_id,
   survey_response_view.event_id as optinomic_event_id,
@@ -12,9 +12,9 @@ SELECT
 
   patient.cis_pid as cis_pid,
   stay.cis_fid as cis_fid,
-  CONCAT(patient.cis_pid, '00', RIGHT((stay.cis_fid/100)::text,2)) as medstatfid,
-  stay.cis_fid/100 as fid,
-  ((cast(response AS json))->>'FID') as fid_survey,
+  -- CONCAT(patient.cis_pid, '00', RIGHT((stay.cis_fid/100)::text,2)) as medstatfid,
+  -- stay.cis_fid/100 as fid,
+  -- ((cast(response AS json))->>'FID') as fid_survey,
 
   'PH' as Rekordart,
   71286515 as betriebsnummer_bur,
