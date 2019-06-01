@@ -55,8 +55,8 @@ description = HoNOS Austritt
 survey = HoNOS
 
 [sql_init]
-__opapp_include(includes/create_view_pabs_interface.sql)
+__opapp_include(includes/create_view_nav_interface.sql)
 
 
 [task hl7_export javascript]
-__opapp_include(includes/hl7_export.js)
+__opapp_include(includes/hl7_navision_export.js)

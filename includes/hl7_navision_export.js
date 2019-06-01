@@ -15,7 +15,7 @@ function format_date(d) {
 }
 
 function main(token) {
-  var path = "/modules/ch.suedhang.apps.honos.production/run_view/honos_interface_pabs";
+  var path = "/modules/ch.suedhang.apps.honos.production/run_view/honos_interface_nav";
   var params = { direct: "True", format: "csv", delimiter: ",", crlf: "True" };
   helpers.callAPI("POST", path, {}, params, function(req) {
     if(req.status == 200) {
