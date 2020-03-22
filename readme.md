@@ -12,9 +12,7 @@ Die Schnittstelle wurde am 1. Juni 2019 auf Navision angepasst. Das Ausgabeverze
 
 #### Komplettexport
 
-In der SQL-Toolbox kann die [navision_interface.sql](https://github.com/Optinomic/ch.suedhang.apps.honos.production/blob/master/includes/navision_interface.sql#L105) Abfrage ausgeführt werden. Lediglich [diese Zeile](https://github.com/Optinomic/ch.suedhang.apps.honos.production/blob/master/includes/navision_interface.sql#L105) gilt es auszuklammern. [Diese Zeile](https://github.com/Optinomic/ch.suedhang.apps.honos.production/blob/master/includes/navision_interface.sql#L105) stellt sicher, dass nur Exporte vom aktuellen Tag erfolgen.  
+In der SQL-Toolbox kann die [navision_interface.sql](https://github.com/Optinomic/ch.suedhang.apps.honos.production/blob/master/includes/navision_interface.sql#L105) Abfrage ausgeführt werden. Lediglich [diese Zeile](https://github.com/Optinomic/ch.suedhang.apps.honos.production/blob/master/includes/navision_interface.sql#L105) gilt es auszuklammern, da wir nicht nur Exporte vom aktuellen Tag exportieren wollen.  
 
-Die Abfrage soll mit folgenden Parametern gespeichert werden: 
-```JSON
-{ direct: "True", format: "csv", delimiter: ",", crlf: "True" }
-```.
+Für den CSV-Export muss die Abfrage mit folgenden Parametern ausgegeben werden:    
+`{ direct: "True", format: "csv", delimiter: ",", crlf: "True" }`
