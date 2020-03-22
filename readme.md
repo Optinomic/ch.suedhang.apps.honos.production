@@ -8,7 +8,7 @@ Fremdeinschätzung von Gesundheit und sozialer Funktionsfähigkeit mittels 12 It
 
 #### Schnittstelle
 
-Die Schnittstelle wurde am 1. Juni 2019 auf Navision angepasst. Das Ausgabeverzeichnis lautet `/media/hl7_files/PROD/FROM_OPTINOMIC/`.
+Die Schnittstelle wurde am 1. Juni 2019 auf `Navision` angepasst. Das Ausgabeverzeichnis lautet `/media/hl7_files/PROD/FROM_OPTINOMIC/`.
 
 #### Komplettexport
 
